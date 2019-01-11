@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ch-EN">
+<head>
+	<title>售后服务</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="author,email address">
+	<meta name="robots" content="index">
+	<meta name="renderer" content="ie-stand">
+	<link rel="stylesheet" href="../assets/css/swiper.min.css">
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<link rel="stylesheet" href="../assets/css/server_new.css">
+	<link rel="stylesheet" href="../assets/css/animate.css">
+</head>
+<body>
+	
+<!-- banner -->
+<div class="banner">
+	<div class="ban_active">
+		<img class="ban_img" id="ban_img" src="../assets/images/ban_ac.png">
+		<div class="ban_ztxt ban_repair">
+			<p class="title wow fadeInUp" data-wow-duration="1s">欢迎使用OBSBOT自助维修中心</p>
+			<p class="desc wow fadeInUp" data-wow-duration="1s">我们很乐于为您提供最优质的服务</p>
+		</div>
+	</div>
+</div>
+<div class="server_cont pages"> 
+	<div class="swrap">
+		<p class="title">配送政策</p>
+		<div class="floor_item">
+			<div class="item_name">配送服务</div>
+			<div class="item_info">海外地区，默认发TNT（待定）快递；<br/>中国大陆地区，全场默认发顺丰陆运，暂时不支持空运服务。
+			</div>
+		</div>
+
+		<div class="floor_item">
+			<p class="item_name">发货政策</p>
+			<div class="desc_wrap">
+				<div class="desc_cont">
+					1）订单发货后，您可以在KS网站上查询快递单号。由于快递单号系统传送的延迟，可能在发货后一到两天才能查到运单号。查到后请到快递公司官网查询：或者您可以通过邮件或电话联系我们的客服查询订单状态。<br/>2）由于国际运送需要经过海关审查，在此期间如产生任何的文件证明需求请您配合清关，相关文件证明可以咨询物流公司或直接联系客服获取。
+				</div>
+			</div>
+		</div>
+
+		<div class="floor_item">
+			<p class="item_name">订单跟踪</p>
+			<div class="desc_wrap">
+				<div class="desc_cont">
+					1）请您务必在收到商品时进行验货；如果发现邮寄包装破损、货物在运输途中破损等情况，请当场指出并拒收，拒收后请致电官方商城客服。<br/>2）请您在收到货物时当场仔细检查发票及货品与送货单的商品是否一致，如果发现商品缺少或已破损等情况，请当场（即配送人员还在现场时）与官方商城客服联系。<br/>3）如您已签收或他人代为签收，则视为商品外包装，商品数量及内容无误。为保证您的权益，我们极力推荐您拍摄完整的开箱视频。<br/>4）产品性质特殊，不允许试用，激活即视为使用，影响该商品的二次销售；试用后退货将产生额外费用。<br/>5）所有订单收货异常，请您务必在收货5天内与我们进行联系。
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 指示 -->
+	<div class="setps flexr swiper-slide">
+		<div class="setp_icon">
+			<p class="num_tips"><span class="num">00</span>\<span class="all_num">00</span></p>
+			<div class="now_setp">
+				<p class="icon_line"><span></span></p>
+				<div class="setp_ztxt">
+					<a class="setp_btn active" data-setp="1" href="javascript:void(0);"><span>配送服务</span></a>
+					<a class="setp_btn" data-setp="2" href="javascript:void(0);"><span>发货政策</span></a>
+					<a class="setp_btn" data-setp="3" href="javascript:void(0);"><span>订单追踪</span></a>
+				</div>
+			</div>
+			<a class="prev" href="javascript:void(0);">
+				<img class="img" src="../assets/images/prev.png">
+				<img class="imged" src="../assets/images/prev_ac.png">
+			</a>
+			<a class="next" href="javascript:void(0);">
+				<img class="img" src="../assets/images/next.png">
+				<img class="imged" src="../assets/images/next_ac.png">
+			</a>
+		</div>
+	</div>
+</div>
+</body>
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/point.js"></script>
+<script>
+	$(function(){
+		new Point({
+			el: '.swrap .floor_item',
+			pointEl: '.pages .setps .setp_ztxt .setp_btn',
+			poineLine: '.pages .setp_icon .icon_line span',
+			pointNum: '.pages .setp_icon .num_tips .num',
+			allNum: '.pages .setp_icon .num_tips .all_num',
+		})
+	})
+</script>
+</html>

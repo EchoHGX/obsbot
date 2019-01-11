@@ -1,0 +1,483 @@
+@charset 'UTF-8';
+
+.ban_active{
+	width: 100%;
+	position: relative;
+}
+.ban_active .ban_img{
+	width: 100%;
+}
+.ban_active .ban_ztxt{
+	position: absolute;
+	left: 26%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.ban_active .ban_ztxt .title{
+	font-size: .9em;
+	color: #fff;
+}
+.ban_active .ban_ztxt .desc{
+	font-size: .32em;
+	color: #fff;
+	margin-top: 30px;
+}
+
+.server_cont{
+	position: relative;
+	background: #1C1B1B;
+	padding: 160px 0;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.server_cont .server_item{
+	width: 87%;
+	padding: 40px 13% 40px 26%;
+	background: #0C0D11;
+	color: #fff;
+	margin-bottom: 60px;
+}
+.server_cont .server_item .title{
+	font-size: .5em;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #333;
+	position: relative;
+	z-index: 1;
+}
+.server_cont .server_item .subtitle{
+	font-size: .32em;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #333;
+	position: relative;
+	z-index: 1;
+}
+.server_cont .server_item .desc_list{
+	padding-top: 20px;
+	position: relative;
+	z-index: 1;
+}
+.server_cont .server_item .desc_list p{
+	font-size: .32em;
+	color: #949494;
+	line-height: 2em;
+}
+.server_cont .server_item .desc_list .server_return_a{
+	font-size: .32em;
+	color: #44A8F2;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+.server_cont .server_item .desc_list .lookmore{
+	display: inline-block;
+	margin-top: 40px;
+	padding: 10px 44px 10px 14px;
+	color: #949494;
+	font-size: .32em;
+	position: relative;
+	z-index: 1;
+	background: #1C1B1B;
+}
+.server_cont .server_item  .desc_list .lookmore:hover{
+	background: #333;
+}
+.server_cont .server_item  .desc_list .lookmore:after{
+	display: block;
+	content: '';
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: url(../images/arr_d.png) center center repeat;
+	background-size: 100%;
+}
+.server_cont .server_item .other_server{
+	padding-top: 40px;
+	position: relative;
+	z-index: 1;
+}
+.server_cont .server_item .other_server a{
+	display: block;
+	font-size: .32em;
+	color: #44A8F2;
+	margin-right: 70px;
+}
+.server_cont .server_item.inr{
+	background: none;
+	position: relative;
+}
+.server_cont .server_item.inr:after{
+	display: block;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: #0C0D11;
+	transform: translateX(-5%);
+	z-index: 0;
+}
+
+
+.ban_active .ban_ztxt.ban_repair{
+	left: 0;
+	width: 100%;
+}
+.ban_active .ban_ztxt.ban_repair .title{
+	width: 100%;
+	text-align: center;
+}
+.ban_active .ban_ztxt.ban_repair .desc{
+	width: 100%;
+	margin-top: 15px;
+	text-align: center;
+}
+.ban_active .ban_ztxt.ban_repair  .server_search{
+	width: 20%;
+	min-width: 400px;
+	height: 40px;
+	border: 1px solid #949494;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	position: relative;
+}
+.ban_active .ban_ztxt.ban_repair  .server_search input{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: none;
+	outline: none;
+	border: none;
+	padding-left: 15px;
+	color: #fff;
+}
+.ban_active .ban_ztxt.ban_repair  .server_search a{
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: url(../images/search.png) center center no-repeat;
+	background-size: 50%;
+}
+
+.repair_cont{
+	width: 100%;
+	position: relative;
+	overflow-x: hidden;
+	padding-bottom: 170px;
+	background: #1C1B1B;
+}
+.repair_cont .caption{
+	width: 100%;
+	font-size: .5em;
+	color: #fff;
+	padding-left: 27%;
+	margin-top: 170px;
+	margin-bottom: 40px;
+}
+.repair_cont .repair_list{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	flex-wrap: wrap;
+}
+.repair_cont .repair_list.renew .repair_item{
+	min-width: 25%;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	text-align: center;
+}
+.repair_cont .repair_list.renew .repair_item:nth-of-type(3n+0){
+	margin-right: 0;
+}
+.repair_cont .repair_list .repair_item{
+	display: block;
+	position: relative;
+	flex: 1;
+	min-width: 20%;
+	margin-right: 25px;
+	margin-bottom: 60px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+	padding-top: 35px;
+	text-align: center;
+	background:rgba(12,13,17,1);
+	box-shadow:0px 2px 4px rgba(0,0,0,0.16);
+}
+.repair_cont .repair_list .repair_item:hover{
+	box-shadow:0px 10px 20px rgba(0,0,0,0.3);
+}
+.repair_cont .repair_list.renew .repair_item:hover .name{
+	color: #fff;
+}
+.repair_cont .repair_list .repair_item img{
+	width: 50px;
+	height: 50px;
+}
+.repair_cont .repair_list.renew .repair_item img{
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+}
+.repair_cont .repair_list .repair_item .name{
+	font-size: .38em;
+	color: #fff;
+	line-height: 2;
+}
+.repair_cont .repair_list.renew .repair_item .name{
+	font-size: .32em;
+	color: #949494;
+	width: 100%;
+	text-align: center;
+}
+.repair_cont .repair_list .repair_item .desc{
+	font-size: .32em;
+	color: #949494;
+	line-height: 2;
+}
+
+.repair_cont .repair_stor{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #0C0D11;
+}
+.repair_cont .repair_stor .stor_img{
+	display: block;
+	width: 45%;
+}
+.repair_cont .repair_stor .stor_img img{
+	width: 100%;
+	display: block;
+}
+.repair_cont .repair_stor .stor_desc{
+	flex: 1;
+	padding-left: 30px;
+	position: relative;
+}
+.repair_cont .repair_stor .stor_desc .ztxt{
+	position: absolute;
+	width: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.repair_cont .repair_stor .stor_desc .adom{
+	font-size: .5em;
+	color: #fff;
+	line-height: 2;
+}
+.repair_cont .repair_stor .stor_desc .lookstor{
+	display: inline-block;
+	padding: 15px 40px;
+	font-size: .32em;
+	color: #fff;
+	background: #1C1B1B;
+	margin-top: 35px;
+}
+.repair_cont .repair_stor .stor_desc .lookstor:hover{
+	background: #333;
+}
+.repair_cont .question_wrap{
+	width: 100%;
+	position: relative;
+	padding: 40px 0;
+}
+.repair_cont .question_wrap:after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 5%;
+	background: #0C0D11;
+	z-index: 0;
+} 
+.repair_cont .question_list{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2%;
+	z-index: 1;
+	position: relative;
+}
+.repair_cont .question_list a{
+	display: block;
+	padding: 40px 0;
+	font-size: .38em;
+	color: #949494;
+	border-bottom: 1px solid #333;
+}
+.repair_cont .question_list .ques_a:hover{
+	color: #fff;
+}
+.repair_cont a.tohelp{
+	display: inline-block;
+	margin-top: 40px;
+	padding: 15px 20px;
+	font-size: .32em;
+	background: #1C1B1B;
+	color: #fff;
+	border-bottom: none;
+}
+.repair_cont a.tohelp:hover{
+	background: #333;
+}
+
+
+
+
+
+/*
+--------------------------维修换新--------------------------------*/
+.repair_setp{
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	justify-content: space-between;
+}
+.repair_setp .repair_setp_item{
+	text-align: center;
+	cursor: pointer;
+}
+.repair_setp .repair_setp_item img{
+	width: 70px;
+	height: auto;
+}
+.repair_setp .repair_setp_item p{
+	text-align: center;
+	font-size: .38em;
+	color: #fff;
+}
+
+
+@media (max-width: 767px){
+	.ban_active .ban_ztxt{
+		left: 1rem;
+		top: 60%;
+	}
+	.ban_active .ban_ztxt .title{
+		font-size: .683rem;
+	}
+	.ban_active .ban_ztxt .desc{
+		font-size: .512rem;
+		margin-top: .427rem;
+	}
+	.server_cont{
+		padding: 1rem 0;
+	}
+	.server_cont .server_item{
+		width: 96%;
+		padding: 1rem .64rem 1rem 1.28rem;
+		margin-bottom: .853rem;
+	}
+	.server_cont .server_item .title{
+		padding-bottom: .427rem;
+	}
+	.server_cont .server_item .subtitle{
+		padding-top: 1rem;
+		padding-bottom: .427rem;
+	}
+	.server_cont .server_item .other_server{
+		padding-top: 1rem;
+	}
+	.server_cont .server_item .other_server a{
+		margin-right: 1rem;
+	}
+
+	.ban_active .ban_ztxt.ban_repair .desc{
+		margin-top: .213rem;
+	}
+	.ban_active .ban_ztxt.ban_repair .server_search{
+		margin-top: .427rem;
+		min-width: 8rem;
+		height: 1.5rem;
+	}
+	.ban_active .ban_ztxt.ban_repair .server_search a{
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+	.repair_cont .caption{
+		margin-top: 1.2rem;
+		margin-bottom: .64rem;
+		padding-left: .64rem;
+	}
+	.repair_cont .repair_list{
+		width: 92%;
+	}
+	.repair_cont .repair_list .repair_item{
+		min-width: 35%;
+		margin-bottom: 1.5rem;
+	}
+	.repair_cont .repair_list .repair_item:nth-of-type(even){
+		margin-right: 0;
+	}
+	.repair_cont .repair_stor{
+		width: 92%;
+		flex-wrap: wrap;
+	}
+	.repair_cont .repair_stor .stor_desc{
+		padding-left: .64rem;
+		padding-right: .64rem;
+	}
+	.repair_cont .repair_stor .stor_desc .ztxt{
+		width: 100%;
+		position: relative;
+		padding-bottom: 1rem;
+	}
+	.repair_cont .repair_stor .stor_desc .lookstor{
+		margin-top: .64rem;
+		padding: .64rem 1rem;
+	}
+	.repair_cont .repair_stor .stor_img{
+		width: 100%;
+	}
+	.repair_cont .question_wrap{
+		width: 100%;
+		padding: 1rem 0;
+	}
+	.repair_cont .question_list{
+		width: 92%;
+	}
+	.repair_cont .question_wrap:after{
+		left: 0;
+	}
+	.repair_cont .question_list a{
+		padding: .64rem 0;
+	}
+	.repair_cont a.tohelp{
+		margin-top: 1rem;
+		padding: .64rem;
+	}
+
+	.repair_cont .repair_list.renew .repair_item{
+		text-align: center;
+		margin-right: .64rem;
+		padding-top: .427rem;
+		padding-bottom: .213rem;
+	}
+
+	.repair_cont .repair_list.renew .repair_item:nth-of-type(3n-1){
+		margin-right: .64rem;
+	}
+	.repair_setp{
+		width: 92%;
+		padding-top: .64rem;
+		padding-bottom: .64rem;
+	}
+	.repair_setp .repair_setp_item img{
+		width: 1.28rem;
+	}
+}

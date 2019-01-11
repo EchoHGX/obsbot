@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ch-EN">
+<head>
+	<title>APP</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="author,email address">
+	<meta name="robots" content="index">
+	<meta name="renderer" content="ie-stand">
+	<link rel="stylesheet" href="../assets/css/swiper.min.css">
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<link rel="stylesheet" href="../assets/css/detail_xuhang.css">
+	<link rel="stylesheet" href="../assets/css/animate.css">
+</head>
+<body>
+	
+	<div class="g-page">
+		<div class="m-main">
+			<div class="m-detail-container">
+				<div class="m-item-content">
+					<div class="word-box">
+						<p class="word-tip">一键横竖屏</p>
+						<p class="word-banner-text"> 方寸之间<br/>「纵」「横」自在</p>
+						<div class="word-desc">
+							<p class="word-desc-item">
+								OBSBOT 寻影独创性的在系统层面实现了一键横竖屏切换功能，并保<br/>持同步跟拍目标，支持 16:9 比例下的横竖屏任意切换视频拍摄以及<br/>4:3、1:1比例下的照片拍摄</p>
+						</div>
+					</div>
+					<div class="banner-box mt80">
+						<div class="banner-item banner-fix-1">
+							<img src="../assets/image/banner3.png" class="inImg"/>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="m-item-content">
+					<div class="word-box">
+						<p class="word-banner-text">镜像模式</p>
+						<div class="word-desc">
+							<p class="word-desc-item">跟着视频学跳舞，总是会把动作做反。OBSBOT Studio App 支持同<br/>步录制及后期镜像反转模式，从此跟跳练舞，方便不止一</p>
+						</div>
+						
+					</div>
+					<div class="banner-box pdl180 pdr180 mt80">
+						<div class="banner-item banner-fix-2">
+							<img src="../assets/image/img-jx-l.png" class="inImg"/>
+							<p class="i-title">普通模式</p>
+						</div>
+						<div class="banner-item banner-fix-2">
+							<img src="../assets/image/img-jx-r.png" class="inImg"/>
+							<p class="i-title">镜像模式</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="m-item-content">
+					<div class="word-box">
+						<p class="word-tip">强大后期</p>
+						<p class="word-banner-text">召唤你的后期魔法师</p>
+						<div class="word-desc">
+							<p class="word-desc-item">
+								拥有市面上最为丰富的视频编辑功能，支持帧级处理，满足包括视频<br/>裁剪、分割、旋转、多轨道视频、多段多轨音乐、配音、滤镜、视频<br/>转场、倒放、变速等专业编辑需求，只需要简单操作，即可制作专业级<br/>影片</p>
+							
+						</div>
+						
+					</div>
+					<div class="banner-box mt80">
+						<div class="banner-item banner-fix-1">
+							<img src="../assets/image/banner4.png" class="inImg"/>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="../assets/js/fontsize.js"></script>
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/swiper.min.js"></script>
+<!-- <script src="../assets/js/common.js"></script> -->
+<script src="../assets/js/animate.js"></script>
+<script>
+	$(function(){
+
+		new WOW().init();
+		
+		$(".mid_content .cont_box .has_video .play_btn").click(function(){
+			if($(this).hasClass("playing")){
+				$(".video_alert").show();
+				$(".video_alert .video_box video").trigger('play');
+				return false;
+			}
+			$(".mid_content .cont_box .has_video .play_btn.playing").removeClass("playing");
+			$(this).addClass("playing");
+			var video_src = $(this).attr("data-src");
+			var html = '<video src="'+ video_src +'" controls>你的浏览器暂不支持</video>';
+			$(".video_alert .video_box").html(html);
+			$(".video_alert").show();
+			$(".video_alert .video_box video").trigger('play');
+		});
+
+		$(".video_alert .video_bg").click(function(){
+			$(".video_alert .video_box video").trigger('pause');
+			$(".video_alert").hide();
+		});
+
+	});
+</script>
+</html>

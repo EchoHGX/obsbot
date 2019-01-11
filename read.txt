@@ -1,0 +1,24 @@
+index/index.html  					首页
+
+active/active.html					活动列表页
+active/active_join.html			活动详情/活动报名
+
+about/about_company.html		关于我们-公司简介
+about/about_honor.html			关于我们-获奖
+about/about_join.html				关于我们-加入我们
+about/about_link.html				关于我们-联系我们
+
+media/media.html						媒体中心-精彩视频
+media/media_news.html				媒体中心-新闻动态
+media/media_news_info.html	媒体中心-新闻动态详情
+
+server/server.html					服务支持-售后服务政策
+server/server_repair.html		服务支持-维修中心
+server/server_return.html		服务支持-退换货
+
+特别说明：
+公共头尾部分，用现在首页的公共头尾部分
+
+以下页面暂不使用
+address/addresss.html
+about/about.html

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ch-EN">
+<head>
+	<title>便携续航</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="author,email address">
+	<meta name="robots" content="index">
+	<meta name="renderer" content="ie-stand">
+	<link rel="stylesheet" href="../assets/css/swiper.min.css">
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<link rel="stylesheet" href="../assets/css/detail_xuhang.css">
+	<link rel="stylesheet" href="../assets/css/animate.css">
+</head>
+<body>
+	
+	<div class="g-page">
+		<div class="m-main">
+			<div class="m-detail-container">
+				<div class="m-item-content">
+					<div class="word-box">
+						<p class="word-tip">外出三宝</p>
+						<p class="word-banner-text">小巧&nbsp;轻便&nbsp;易带跑</p>
+						<div class="word-desc">
+							<p class="word-desc-item">1）17 cm 的身高，放置在任意平面一键开机即刻开拍；</p>
+							<p class="word-desc-item">2）机底配备通用螺纹接口，支持三脚架、移动配件等设备搭载使用；</p>
+							<p class="word-desc-item"> 3） 整机 (含电池) 仅重610克,便于手持，说走就走</p>
+						</div>
+						<div class="word-param">
+							<div class="word-param-item">
+								<b class="value">17cm</b>
+								<span class="label">整机高度</span>
+							</div>
+							<div class="word-param-item">
+								<b class="value">610g</b>
+								<span class="label">整机重量</span>
+							</div>
+							<div class="word-param-item">
+								<b class="value">M6</b>
+								<span class="label">配件螺纹接口</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-box mt80">
+						<div class="banner-item banner-fix-1">
+							<img src="../assets/image/TAiL.png" class="inImg"/>
+							<img src="../assets/image/Tail (2).png" class="outImg"/>
+						</div>
+					</div>
+					<div class="banner-box pdl15 pdr15 pdt15">
+						<div class="banner-item banner-fix-2">
+							<img src="../assets/image/img-sence-1.png" class="inImg"/>
+						</div>
+						<div class="banner-item banner-fix-2">
+							<img src="../assets/image/img-sence-2.png" class="inImg"/>
+						</div>
+					</div>
+					
+				</div>
+
+
+				<div class="m-item-content">
+					<div class="word-box">
+						<p class="word-banner-text">多一点电量<br/>多一分想象</p>
+						<div class="word-desc">
+							<p class="word-desc-item">1850mAh 大容量智能电池，支持最高长达 180 分钟的拍摄体验，更<br/>提供 15 重电池安全保护，全方位杜绝设备使用中的安全隐患，让你<br/>尽情挥洒创意想象，安全无忧。</p>
+						</div>
+						<div class="word-param">
+							<div class="word-param-item">
+								<b class="value">1850mAh</b>
+								<span class="label">电池容量</span>
+							</div>
+							<div class="word-param-item">
+								<b class="value">180min</b>
+								<span class="label">拍摄续航</span>
+							</div>
+							<div class="word-param-item">
+								<b class="value">15重</b>
+								<span class="label">电池安全保护</span>
+							</div>
+						</div>
+					</div>
+					<div class="banner-box mt80">
+						<div class="banner-item banner-fix-1">
+							<img src="../assets/image/banner2.png" class="inImg"/>
+							
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="../assets/js/fontsize.js"></script>
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/swiper.min.js"></script>
+<!-- <script src="../assets/js/common.js"></script> -->
+<script src="../assets/js/animate.js"></script>
+<script>
+	$(function(){
+
+		new WOW().init();
+		
+		$(".mid_content .cont_box .has_video .play_btn").click(function(){
+			if($(this).hasClass("playing")){
+				$(".video_alert").show();
+				$(".video_alert .video_box video").trigger('play');
+				return false;
+			}
+			$(".mid_content .cont_box .has_video .play_btn.playing").removeClass("playing");
+			$(this).addClass("playing");
+			var video_src = $(this).attr("data-src");
+			var html = '<video src="'+ video_src +'" controls>你的浏览器暂不支持</video>';
+			$(".video_alert .video_box").html(html);
+			$(".video_alert").show();
+			$(".video_alert .video_box video").trigger('play');
+		});
+
+		$(".video_alert .video_bg").click(function(){
+			$(".video_alert .video_box video").trigger('pause');
+			$(".video_alert").hide();
+		});
+
+	});
+</script>
+</html>

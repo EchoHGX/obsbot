@@ -1,0 +1,581 @@
+@charset 'UTF-8';
+
+body{
+	background: #1C1B1B;
+	line-height: 2;
+}
+.cfc{
+	color: #fff !important;
+}
+.mb0{
+	margin-bottom: 0 !important;
+}
+.mb10{
+	margin-bottom: 10px;
+}
+.wcont{
+	padding-right: 20% !important;
+}
+.ban_active{
+	width: 100%;
+	position: relative;
+}
+.ban_active .ban_img{
+	width: 100%;
+}
+.ban_active .ban_ztxt{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.ban_active .ban_ztxt .title{
+	width: 100%;
+	text-align: center;
+	font-size: .9em;
+	color: #fff;
+}
+.ban_active .ban_ztxt .desc{
+	width: 100%;
+	text-align: center;
+	font-size: .32em;
+	color: #fff;
+	margin-top: 30px;
+}
+
+
+
+.server_cont{
+	width: 100%;
+	overflow: hidden;
+}
+.swrap{
+	width: 100%;
+	padding-left: 27%;
+	color: #fff;
+}
+.swrap .title{
+	font-size: .64em;
+	padding-top: 85px;
+	margin-bottom: 45px;
+	padding-left: 2.5%;
+}
+
+.swrap .floor_item{
+	width: 100%;
+	background: #0C0D11;
+	padding-left: 3.5%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	/*margin-bottom: 85px;*/
+	margin-bottom: 42px;
+}
+.swrap .floor_item .file_input{
+	width: 100%;
+	height: 50px;
+	background: #1C1B1B;
+	position: relative;
+	border: 1px solid #212121;
+	overflow: hidden;
+}
+.swrap .file_input .input_box{
+	display: block;
+	width: 120px;
+	height: 35px;
+	float: right;
+	margin-right: 15px;
+	margin-top: 7.5px;
+	background: #F60037;
+	position: relative;
+	cursor: pointer;
+	z-index: 5;
+}
+.swrap .file_input .input_box p{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: .32em;
+	color: #fff;
+	line-height: 35px;
+
+}
+.swrap .file_input .input_box input{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+}
+.swrap .file_input .file_name{
+	position: absolute;
+	font-size: .32em;
+	line-height: 50px;
+	left: 15px;
+	top: 0;	
+	color: #666;
+}
+.swrap .floor_item .desc_wrap{
+	width: 80%;
+	font-size: .32em;
+	color: #949494;
+}
+.swrap .floor_item .desc_wrap .desc_name{
+	font-size: .32em;
+	margin-bottom: 10px;
+}
+.swrap .floor_item .desc_wrap .desc_cont,
+.swrap .floor_item .desc_wrap .desc_cont p{
+	margin-bottom: 40px;
+	font-size: .32em;
+	color: #949494;
+}
+.swrap .floor_item .desc_wrap .desc_cont,
+.swrap .floor_item .desc_wrap .desc_cont p p{
+	font-size: .32em;
+	color: #949494;
+}
+.swrap .floor_item .slist_setp{
+	flex-wrap: nowrap;
+}
+.swrap .floor_item .setp_item{
+	width: 25%;
+	margin-right: 2%;
+	text-align: center;
+}
+.swrap .setp_item .setp_num{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: .8em;
+}
+.swrap .setp_item .setp_name{
+	width: 100%;
+	text-align: center;
+	font-size: .38em;
+	margin-top: 15px;
+}
+.swrap .setp_item .setp_desc{
+	margin-top: 15px;
+	font-size: .32em;
+	color: #949494;
+}
+
+.swrap .item_name{
+	font-size: .5em;
+	margin-bottom: 20px;
+}
+.swrap .item_desc,
+.swrap .item_desc p{
+	font-size: .38em;
+	color: #949494;
+}
+.swrap .item_info,
+.swrap .item_info p{
+	font-size: .32em;
+	color: #949494;
+}
+.swrap .item_info_list{
+	font-size: .32em;
+	color: #949494;
+	margin-top: 20px;
+}
+
+
+.swrap .sinput_list{
+	width: 65%;
+	flex-wrap: wrap;
+}
+.swrap .sinput_list .input_item{
+	width: 48%;
+	font-size: .32em;
+	position: relative;
+	margin-right: 4%;
+	margin-bottom: 40px;
+}
+.swrap .sinput_list .input_item:nth-of-type(even){
+	margin-right: 0;
+}
+.swrap .sinput_list .input_item .input{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.swrap .sinput_list .input_item input{
+	width: 100%;
+	background: #1C1B1B;
+	line-height: 50px;
+	color: #fff;
+	border: 1px solid #212121;
+	outline: none;
+	padding-left: 15px;
+	display: block;
+	cursor: pointer;
+}
+.swrap .sinput_list .input_item input::-webkit-input-placeholder {
+   color: #949494;
+}
+.swrap .sinput_list .input_item .input.no_arr input{
+  cursor: initial;
+}
+.swrap .sinput_list .input_item .input.no_arr:after{
+ 	display: none; 
+}
+.swrap .sinput_list .input_item .input:after{
+	content: '';
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	display: block;
+	background: url(../images/arr_d.png) center center no-repeat;
+	background-size: 100%;
+	right: 15px;
+	top: 50%;
+	transition: all .3s;
+	transform: translate3d(0,-50%,0) rotate(0);
+}
+.swrap .sinput_list .input_item.active .input:after{
+	transform: translate3d(0,-50%,0) rotate(180deg);
+}
+
+
+.swrap .input_ul{
+	width: 100%;
+	border-right: 1px solid #212121;
+	border-bottom: 1px solid #212121;
+	position: absolute;
+	background: #0c0c0c;
+	z-index: 5;
+	display: none;
+	max-height: 200px !important;
+	overflow-y: auto;
+}
+.swrap .sinput_list .input_item.active .input_ul{
+	display: block;
+}
+.swrap .input_ul .check_item{
+	display: block;
+	width: 100%;
+	line-height: 50px;
+	background: #1C1B1B;
+	height: 50px;
+	font-size: 16px;
+	color: #fff;
+	padding-left: 15px;
+	border-left: 1px solid #212121;
+}
+.swrap .input_ul .check_item:hover{
+	background: #242227;
+}
+
+.swrap .input_div{
+	display: block;
+	width: 65%;
+	max-width: 65%;
+	min-width: 65%;
+	margin-top: 50px;
+	height: 200px;
+	max-height: 200px;
+	min-height: 200px;
+	padding: 15px;
+	font-size: .32em;
+	color: #fff;
+	border: 1px solid #212121;
+	outline: none;
+	background: #1C1B1B;
+	position: relative;
+}
+.floor_item .tips_que{
+	font-size: .32em;
+	color: #949494;
+	margin-top: 30px;
+}
+.input_cat_form{
+	width: 65%;
+	margin-top: 80px;
+}
+.input_cat_form .concat{
+	flex-wrap: wrap;
+}
+.input_cat_form .con_ques{
+	font-size: .5em;
+	color: #fff;
+	margin-bottom: 50px;
+}
+
+.input_cat_form .tips{
+	font-size: .32em;
+	color: #949494;
+	margin-top: 30px;
+}
+.input_cat_form  .input{
+	display: block;
+	flex: 1;
+	color: #fff;
+	margin-right: 40px;
+	height: 50px;
+	line-height: 45px;
+	border-bottom: 1px solid #949494;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background: inherit;
+	outline: none;
+}
+.input_cat_form  .input:last-child{
+	margin-right: 0;
+}
+.input_cat_form .submit{
+	display: block;
+	margin-top: 50px;
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	background: #F60037;
+	color: #fff;
+	border: none;
+	outline: none;
+	font-size: .38em;
+	cursor: pointer;
+}
+
+.question_wrap{
+	width: 100%;
+	position: relative;
+}
+.question_wrap:after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 5%;
+	background: #0C0D11;
+	z-index: 0;
+}
+.question_list{
+	width: 80%;
+	z-index: 1;
+	position: relative;
+}
+.question_list a{
+	display: block;
+	padding: 40px 0;
+	font-size: .38em;
+	color: #949494;
+	border-bottom: 1px solid #333;
+	position: relative;
+}
+.question_list a.active .detail{
+	display: block;
+}
+.question_list a .detail,
+.question_list a .detail p{
+	display: none;
+	font-size: .30em;
+	color: #999 !important;
+	padding-top: 30px;
+}
+.question_list .ques_a:hover{
+	color: #fff;
+}
+a.tohelp{
+	display: inline-block;
+	margin-top: 40px;
+	padding: 15px 20px;
+	font-size: .32em;
+	background: #1C1B1B;
+	color: #fff;
+	border-bottom: none;
+}
+a.tohelp:hover{
+	background: #333;
+}
+
+
+
+
+@media (min-width: 2300px){
+	.swrap .floor_item{
+		margin-bottom: 85px;
+	}
+	.question_list a .arr_d{
+    width:45px;
+    height: 45px;
+  }
+}
+
+
+@media (min-width: 1500px) and (max-width: 2299px){
+	.swrap .sinput_list .input_item{
+		height: 60px;
+		margin-bottom: 55px;
+	}
+	.swrap .floor_item .file_input{
+		height: 60px;
+	}
+	.swrap .sinput_list .input_item input{
+		line-height: 60px;
+	}
+	.swrap .input_ul .check_item{
+		height: 60px;
+		line-height: 60px;
+	}
+	.swrap .file_input .input_box{
+		height: 40px;
+		margin-top: 10px;
+	}
+	.swrap .file_input .input_box p{
+		line-height: 40px;
+	}
+	.swrap .file_input .file_name{
+		line-height: 60px;
+		left: 30px;
+	}
+	.swrap .input_div{
+		margin-top: 72px;
+	}
+	.input_cat_form{
+		margin-top: 100px;
+	}
+	.question_list a{
+		padding: 30px 0;
+	}
+}
+
+@media (max-width: 1499px) and (min-width:  1200px){
+	.question_list a{
+		padding: 25px 0;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+	.swrap{
+		padding-left: 20%;
+	}
+	.swrap .floor_item .setp_item{
+		width: 30%;
+	}
+	.question_list a{
+		padding: 20px 0;
+	}
+}
+
+
+@media (max-width: 767px){
+	.ban_active .ban_ztxt .title{
+		font-size: .768rem;
+		line-height: 1;
+	}
+	.ban_active .ban_ztxt .desc{
+		line-height: 1;
+		margin-top: .64rem;
+		font-size: .512rem;
+	}
+	.swrap{
+		padding-left: 4%;
+	}
+	.swrap .title{
+		font-size: .683rem;
+		padding-top: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	.swrap .floor_item{
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		margin-bottom: 1.5rem;
+	}
+	.swrap .floor_item .desc_wrap{
+		width: 90%;
+	}
+	.swrap .floor_item .desc_wrap .desc_cont,
+	.swrap .floor_item .desc_wrap .desc_cont p{
+		font-size: .597rem;
+	}
+	.swrap .item_name{
+		font-size: .683rem;
+	}
+	.swrap .floor_item .setp_item{
+		width: 30%;
+	}
+	.wcont{
+		padding-right: 5% !important;
+	}
+	.swrap .sinput_list{
+		width: 94%;
+	}
+	.swrap .sinput_list .input_item{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 1rem;
+	}
+	.swrap .floor_item .file_input{
+		height: 2rem;
+	}
+	.swrap .file_input .input_box{
+		width: 3rem;
+		height: 1.5rem;
+		margin-top: .25rem;
+		margin-right: .25rem;
+		float: right;
+	}
+	.swrap .file_input .file_name{
+		line-height: 2rem;
+		left: .64rem;
+	}
+	.swrap .sinput_list .input_item input{
+		height: 2rem;
+	}
+	.swrap .input_ul .check_item{
+		height: 2rem;
+	}
+	.swrap .input_div{
+		width: 94%;
+		max-height: 94%;
+		min-width: 94%;
+		height: 5rem;
+		max-height: 5rem;
+		min-height: 5rem;
+	}
+	.input_cat_form{
+		width: 94%;
+		margin-top: 2rem;
+	}
+	.input_cat_form .con_ques{
+		margin-bottom: 1.5rem;
+	}
+	.input_cat_form .input{
+		width: 100%;
+		margin-bottom: 1.5rem;
+		flex: none;
+		margin-right: 0;
+	}
+	.input_cat_form .tips{
+		margin-top: 0;
+	}
+	.input_cat_form .submit{
+		margin-top: 1.5rem;
+	}
+	.question_wrap{
+		width: 100%;
+	}
+	.question_list{
+		width: 92%;
+	}
+	.question_wrap:after{
+		left: 0;
+	}
+	.question_list a{
+		padding: .64rem 0;
+	}
+	a.tohelp{
+		margin-top: 1rem;
+		padding: .64rem;
+	}
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ch-EN">
+<head>
+	<title>首页</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="author,email address">
+	<meta name="robots" content="index">
+	<meta name="renderer" content="ie-stand">
+	<link rel="stylesheet" href="../assets/css/swiper.min.css">
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<style>
+		.alert_email{
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 999;
+		}
+		.alert_email:after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,.5);
+		}
+		.alert_email .alert_cont{
+			position: absolute;
+			width: 40%;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			background-color: #fff;
+		}
+		.alert_email .alert_cont .banner{
+			width: 100%;
+			position: relative;
+
+		}
+		.alert_email .alert_cont .banner .ban_img{
+			width: 100%;
+			display: block;
+		}
+		.alert_email .alert_cont .banner .ztxt{
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding-left: 100px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.alert_email .banner .ztxt .title{
+			font-size: .5em;
+			color: #fff;
+			margin-bottom: 30px;
+		}
+		.alert_email .banner .ztxt .desc{
+			font-size: .32em;
+			color: #D8D8D8;
+			line-height: 3;
+		}
+		.alert_email .banner .close{
+			display: block;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			transition: all .3s;
+		}
+		.alert_email .banner .close img{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.alert_email .cont{
+			width: 100%;
+			padding: 50px 66px;
+		}
+		.alert_email .cont .input_list{
+			flex-wrap: wrap;
+		}
+		.alert_email .cont .input_text{
+			width: 100%;
+			display: block;
+			height: 50px;
+			border: 1px solid #949494;
+			outline: none;
+			padding-left: 25px;
+			font-size: .32em;
+		}
+		.alert_email .cont .submit{
+			width: 100%;
+			display: block;
+			height: 50px;
+			text-align: center;
+			outline: none;
+			border: none;
+			background-color: #0C0D11;
+			color: #fff;
+			cursor: pointer;
+			margin-top: 50px;
+			font-size: .32em;
+			font-weight: bold;
+		}
+		.alert_email .cont .share_list{
+			justify-content: center;
+			margin-top: 20px;
+		}
+		.alert_email .cont .share_btn{
+			width: 25px;
+			height: 25px;
+			display: block;
+			margin-left: 5%;
+		}
+		.alert_email .cont .share_btn:nth-of-type(1){
+			margin-left: 0;
+		}
+		.alert_email .cont .share_btn .img{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		.alert_email .cont .tips{
+			font-size: .32em;
+			color: #B4B4B4;
+			font-weight: bold;
+			line-height: 2;
+			margin-top: 60px;
+			text-align: center;
+			border-bottom: 1px solid #B4B4B4;
+			padding-bottom: 15px;
+		}
+
+
+		@media (min-width: 2000px){
+			.alert_email .cont .input_text{
+				height: 77px;
+			}
+			.alert_email .cont .submit{
+				height: 77px;
+			}
+			.alert_email .cont .share_btn{
+				width: 35px;
+				height: 35px;
+			}
+		}
+
+		@media (min-width: 768px) and (max-width: 1450px){
+			.alert_email .cont .input_text{
+				height: 45px;
+				padding-left: 15px;
+			}
+			.alert_email .cont .submit{
+				height: 45px;
+			}
+			.alert_email .cont{
+				padding: 40px 45px;
+			}
+			.alert_email .cont .submit{
+				margin-top: 40px;
+			}
+			.alert_email .cont .tips{
+				margin-top: 30px;
+			}
+			.alert_email .banner .close{
+				width: 30px;
+				height: 30px;
+			}
+		}
+
+		@media (max-width: 767px){
+			.alert_email .alert_cont{
+				width: 92%;
+			}
+			.alert_email .banner .close{
+				width: 1.5rem;
+				height: 1.5rem;
+				top: .4rem;
+				right: .4rem;
+			}
+			.alert_email .cont{
+				padding: 1rem .64rem;
+			}
+			.alert_email .cont .submit{
+				margin-top: 1rem;
+			}
+			.alert_email .cont .tips{
+				margin-top: 1.5rem;
+			}
+			.alert_email .cont .input_text{
+				padding-left: .64rem;
+				height: 2rem;
+			}
+			.alert_email .cont .submit{
+				height: 2rem;
+			}
+			.alert_email .cont .tips{
+				font-size: .64rem;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="alert_email" style="display: none;">
+	<div class="alert_cont">
+		<div class="banner">
+			<img class="ban_img" src="email.jpg">
+			<!-- <div class="ztxt">
+				<div class="title">SIGN ME UP!</div>
+				<div class="desc">Get special offers,exclusive product news.<br/>and event info straight to your inbox.</div>
+			</div> -->
+			<a class="close" href="javascript:void(0);"><img src="close.png"></a>
+		</div>
+		<div class="cont">
+			<div class="flexr input_list">
+				<input class="input_text" type="text" name="email" autocomplete="off"  placeholder="Email">
+				<input class="submit" type="submit" name="submit" value="Subscribe">
+			</div>
+			<div class="tips">
+				Subscribe to get special offers,exclusive product news,and event info straight to your inbox.
+			</div>
+			<div class="flexr share_list">
+				<a class="share_btn" href="javascript:void(0);">
+					<img class="img" src="s1.png">
+				</a> 
+				<a class="share_btn" href="javascript:void(0);">
+					<img class="img" src="s2.png">
+				</a> 
+				<a class="share_btn" href="javascript:void(0);">
+					<img class="img" src="s3.png">
+				</a> 
+				<a class="share_btn" href="javascript:void(0);">
+					<img class="img" src="s4.png">
+				</a> 
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/fontsize.js"></script>
+<script>
+	$(function(){
+		if (!localStorage.getItem("hasEmail") || localStorage.getItem("hasEmail") != "true") {
+			$(".alert_email").show();
+		}
+
+		$(".alert_email .banner .close").click(function(){
+			localStorage.setItem("hasEmail","true");
+			$(".alert_email").hide();
+		});
+
+		$(".alert_email .cont .submit").click(function(){
+		
+			localStorage.setItem("hasEmail","true");
+			$(this).css("color","#aaa").val("Subscribed");
+			$(".alert_email").hide();
+		});
+	});
+</script>
+</html>
