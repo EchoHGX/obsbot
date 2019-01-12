@@ -27,6 +27,7 @@
       color: #999; }
       .m-item-content .word-box .word-desc .word-desc-item {
         text-align: center;
+        line-height: 1.7;
         margin-top: 5px; }
     .m-item-content .word-box .word-param {
       margin-top: 45px;
@@ -38,6 +39,7 @@
         .m-item-content .word-box .word-param .word-param-item .value {
           font-size: .56em;
           display: block;
+          padding-bottom: 5px;
           text-align: center;
           font-weight: normal; }
         .m-item-content .word-box .word-param .word-param-item .label {
@@ -153,9 +155,12 @@
     text-align: center; }
     .m-item3-content .hrd-intro-box .hrd-intro-item {
       display: inline-block;
-      margin: 0 10%;
+      margin: 0 5% 0 10%;
       border: 1px solid transparent;
       cursor: pointer; }
+    .m-item3-content .hrd-intro-box .hrd-intro-item:nth-of-type(2){
+      margin: 0 10% 0 5%;
+    }
       .m-item3-content .hrd-intro-box .hrd-intro-item:hover .info .des {
         color: #dc1254; }
       .m-item3-content .hrd-intro-box .hrd-intro-item:hover .icon.icon-lut {
@@ -179,6 +184,7 @@
         .m-item3-content .hrd-intro-box .hrd-intro-item .info .des {
           text-align: center;
           font-size: .24em;
+          line-height: 1.6;
           color: #fff;}
   .m-item3-content .hrd-pic-compare {
     position: relative; }
@@ -187,6 +193,7 @@
       overflow: hidden; }
       .m-item3-content .hrd-pic-compare .pre-pic .pic {
         display: block;
+        cursor: 
         width: 100%; }
         .m-item3-content .hrd-pic-compare .pre-pic .pic img {
           display: block;
@@ -257,6 +264,7 @@
   font-size: .38em;
   color: #999;
   padding-top: 50px;
+  line-height: 1.7;
 }
 .m-item11-content .img_warp{
   display: block;
@@ -272,6 +280,7 @@
 }
 .m-item11-content .d_list .item .val{
   font-size: .64em;
+  margin-bottom: 5px;
   color: #999;
 }
 .m-item11-content .d_list .item .name{
@@ -301,6 +310,7 @@
   font-size: .38em;
   color: #999;
   padding-top: 50px;
+  line-height: 1.7;
 }
 /*# sourceMappingURL=detail_xuhang.css.map */
 
@@ -331,6 +341,9 @@
   .m-item11-content{
     padding-top: 274px;
   }
+  .m-item11-content .ztxt{
+    padding-right: 190px;
+  }
   .m-item11-content .ztxt .desc{
     padding-top: 88px;
   }
@@ -350,13 +363,24 @@
     width: 108px;
     height: 108px;
   }
+  .m-video2-list .video2-item .video2-info .des{
+    margin-top: 48px;
+  }
+  .m-item3-content .hrd-intro-box{
+    margin-top: 132px;
+  }
+  .m-item-content .word-box .word-param .word-param-item .value{
+    padding-bottom: 10px;
+  }
+  .m-item-content .word-box .word-param .word-param-item{
+    margin: 0 40px;
+  }
 }
 
 
 
 
 @media screen and (max-width: 2519px) and (min-width: 2000px){
-
 
 
 }

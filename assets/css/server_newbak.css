@@ -51,24 +51,26 @@ body{
 }
 .swrap{
 	width: 100%;
-	padding-left: 27%;
+	padding-left: 25%;
+	padding-right: 25%;
 	color: #fff;
 }
 .swrap .title{
 	font-size: .64em;
 	padding-top: 85px;
 	margin-bottom: 45px;
-	padding-left: 2.5%;
+	/*padding-left: 2.5%;*/
 }
 
 .swrap .floor_item{
 	width: 100%;
-	background: #0C0D11;
-	padding-left: 3.5%;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	/*padding-left: 3.5%;*/
+	/*padding-right: 3.5%;*/
+	padding-top: 50px;
+	padding-bottom: 50px;
 	/*margin-bottom: 85px;*/
 	margin-bottom: 42px;
+	border-top: 1px solid #313131;
 }
 .swrap .floor_item .file_input{
 	width: 100%;
@@ -117,32 +119,34 @@ body{
 	color: #666;
 }
 .swrap .floor_item .desc_wrap{
-	width: 80%;
-	font-size: .32em;
+	width: 100%;
+	/*font-size: .32em;*/
 	color: #949494;
 }
 .swrap .floor_item .desc_wrap .desc_name{
 	font-size: .32em;
 	margin-bottom: 10px;
 }
-.swrap .floor_item .desc_wrap .desc_cont,
-.swrap .floor_item .desc_wrap .desc_cont p{
+.swrap .floor_item .desc_wrap .desc_cont{
 	margin-bottom: 40px;
-	font-size: .32em;
-	color: #949494;
+	font-size: .32em !important;
+	color: #949494 !important;
 }
-.swrap .floor_item .desc_wrap .desc_cont,
-.swrap .floor_item .desc_wrap .desc_cont p p{
-	font-size: .32em;
-	color: #949494;
+.swrap .floor_item .desc_wrap .desc_cont p,
+.swrap .floor_item .desc_wrap .desc_cont span{
+	font-size: 1em !important;
+	color: #949494 !important;
 }
 .swrap .floor_item .slist_setp{
 	flex-wrap: nowrap;
 }
 .swrap .floor_item .setp_item{
-	width: 25%;
+	width: 32%;
 	margin-right: 2%;
 	text-align: center;
+}
+.swrap .floor_item .setp_item:nth--last-of-type(1){
+	margin-right: none;
 }
 .swrap .setp_item .setp_num{
 	display: inline-block;
@@ -170,25 +174,38 @@ body{
 	font-size: .5em;
 	margin-bottom: 20px;
 }
-.swrap .item_desc,
-.swrap .item_desc p{
-	font-size: .38em;
-	color: #949494;
+.swrap .item_desc{
+	font-size: .38em !important;
+	color: #949494 !important;
 }
-.swrap .item_info,
-.swrap .item_info p{
-	font-size: .32em;
-	color: #949494;
+.swrap .item_desc p,
+.swrap .item_desc span{
+	font-size: 1em !important;
+	color: #949494 !important;
+}
+.swrap .item_info{
+	font-size: .32em !important;
+	color: #949494 !important;
+}
+.swrap .item_info p,
+.swrap .item_info span{
+	font-size: 1em !important;
+	color: #949494 !important;
 }
 .swrap .item_info_list{
-	font-size: .32em;
-	color: #949494;
+	font-size: .32em !important;
+	color: #949494 !important;
 	margin-top: 20px;
+}
+.swrap .item_info_list span,
+.swrap .item_info_list p{
+	font-size: 1em !important;
+	color: #949494 !important;
 }
 
 
 .swrap .sinput_list{
-	width: 65%;
+	width: 100%;
 	flex-wrap: wrap;
 }
 .swrap .sinput_list .input_item{
@@ -257,6 +274,7 @@ body{
 }
 .swrap .sinput_list .input_item.active .input_ul{
 	display: block;
+	z-index: 6;
 }
 .swrap .input_ul .check_item{
 	display: block;
@@ -275,9 +293,7 @@ body{
 
 .swrap .input_div{
 	display: block;
-	width: 65%;
-	max-width: 65%;
-	min-width: 65%;
+	width: 100%;
 	margin-top: 50px;
 	height: 200px;
 	max-height: 200px;
@@ -296,7 +312,7 @@ body{
 	margin-top: 30px;
 }
 .input_cat_form{
-	width: 65%;
+	width: 100%;
 	margin-top: 80px;
 }
 .input_cat_form .concat{
@@ -350,7 +366,7 @@ body{
 }
 .question_wrap:after{
 	content: '';
-	display: block;
+	display: none;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -360,7 +376,7 @@ body{
 	z-index: 0;
 }
 .question_list{
-	width: 80%;
+	width: 100%;
 	z-index: 1;
 	position: relative;
 }
@@ -375,12 +391,16 @@ body{
 .question_list a.active .detail{
 	display: block;
 }
-.question_list a .detail,
-.question_list a .detail p{
+.question_list a .detail{
 	display: none;
-	font-size: .30em;
 	color: #999 !important;
+	font-size: 1em !important;
 	padding-top: 30px;
+}
+.question_list a .detail p,
+.question_list a .detail span{
+	font-size: 1em !important;
+	color: #999 !important;
 }
 .question_list .ques_a:hover{
 	color: #fff;
@@ -408,6 +428,32 @@ a.tohelp:hover{
 	.question_list a .arr_d{
     width:45px;
     height: 45px;
+  }
+  .swrap .setp_item .setp_num{
+  	width: 100px;
+  	height: 100px;
+  	line-height: 100px;
+  }
+  .swrap .sinput_list .input_item input{
+  	height: 70px;
+  	line-height: 70px;
+  }
+  .swrap .floor_item .file_input{
+  	height: 70px;
+  }
+  .swrap .file_input .file_name{
+  	line-height: 70px;
+  }
+  .swrap .file_input .input_box p{
+  	line-height: 50px;
+  	height: 50px;
+  }
+  .swrap .file_input .input_box{
+  	height: 50px;
+  }
+  .input_cat_form .submit{
+  	height: 50px;
+  	line-height: 50px;
   }
 }
 
@@ -480,6 +526,7 @@ a.tohelp:hover{
 	}
 	.swrap{
 		padding-left: 4%;
+		padding-right: 4%;
 	}
 	.swrap .title{
 		font-size: .683rem;
@@ -492,7 +539,7 @@ a.tohelp:hover{
 		margin-bottom: 1.5rem;
 	}
 	.swrap .floor_item .desc_wrap{
-		width: 90%;
+		width: 100%;
 	}
 	.swrap .floor_item .desc_wrap .desc_cont,
 	.swrap .floor_item .desc_wrap .desc_cont p{

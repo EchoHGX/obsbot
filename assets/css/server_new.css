@@ -14,7 +14,7 @@ body{
 	margin-bottom: 10px;
 }
 .wcont{
-	padding-right: 20% !important;
+	padding-right: 0 !important;
 }
 .ban_active{
 	width: 100%;
@@ -32,13 +32,13 @@ body{
 .ban_active .ban_ztxt .title{
 	width: 100%;
 	text-align: center;
-	font-size: .9em;
+	font-size: 45px;
 	color: #fff;
 }
 .ban_active .ban_ztxt .desc{
 	width: 100%;
 	text-align: center;
-	font-size: .32em;
+	font-size: 16px;
 	color: #fff;
 	margin-top: 30px;
 }
@@ -56,7 +56,7 @@ body{
 	color: #fff;
 }
 .swrap .title{
-	font-size: .64em;
+	font-size: 32px;
 	padding-top: 85px;
 	margin-bottom: 45px;
 	/*padding-left: 2.5%;*/
@@ -96,7 +96,7 @@ body{
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	font-size: .32em;
+	font-size: 16px;
 	color: #fff;
 	line-height: 35px;
 
@@ -112,7 +112,7 @@ body{
 }
 .swrap .file_input .file_name{
 	position: absolute;
-	font-size: .32em;
+	font-size: 16px;
 	line-height: 50px;
 	left: 15px;
 	top: 0;	
@@ -120,23 +120,22 @@ body{
 }
 .swrap .floor_item .desc_wrap{
 	width: 100%;
-	font-size: .32em;
+	font-size: 16px;
 	color: #949494;
 }
 .swrap .floor_item .desc_wrap .desc_name{
-	font-size: .32em;
+	font-size: 16px;
 	margin-bottom: 10px;
 }
-.swrap .floor_item .desc_wrap .desc_cont,
-.swrap .floor_item .desc_wrap .desc_cont p{
+.swrap .floor_item .desc_wrap .desc_cont{
 	margin-bottom: 40px;
-	font-size: .32em;
-	color: #949494;
+	font-size: 16px !important;
+	color: #949494 !important;
 }
-.swrap .floor_item .desc_wrap .desc_cont,
-.swrap .floor_item .desc_wrap .desc_cont p p{
-	font-size: .32em;
-	color: #949494;
+.swrap .floor_item .desc_wrap .desc_cont p,
+.swrap .floor_item .desc_wrap .desc_cont span{
+	font-size: 16px !important;
+	color: #949494 !important;
 }
 .swrap .floor_item .slist_setp{
 	flex-wrap: nowrap;
@@ -162,33 +161,40 @@ body{
 .swrap .setp_item .setp_name{
 	width: 100%;
 	text-align: center;
-	font-size: .38em;
+	font-size: 19px;
 	margin-top: 15px;
 }
 .swrap .setp_item .setp_desc{
 	margin-top: 15px;
-	font-size: .32em;
+	font-size: 16px;
 	color: #949494;
 }
 
 .swrap .item_name{
-	font-size: .5em;
+	font-size: 25px;
 	margin-bottom: 20px;
 }
 .swrap .item_desc,
-.swrap .item_desc p{
-	font-size: .38em;
-	color: #949494;
+.swrap .item_desc p,
+.swrap .item_desc span{
+	font-size: 19px !important;
+	color: #949494 !important;
 }
 .swrap .item_info,
-.swrap .item_info p{
-	font-size: .32em;
-	color: #949494;
+.swrap .item_info p,
+.swrap .item_info span{
+	font-size: 16px !important;
+	color: #949494 !important;
 }
 .swrap .item_info_list{
-	font-size: .32em;
-	color: #949494;
+	font-size: 16px !important;
+	color: #949494 !important;
 	margin-top: 20px;
+}
+.swrap .item_info_list span,
+.swrap .item_info_list p{
+	font-size: 16px !important;
+	color: #949494 !important;
 }
 
 
@@ -198,7 +204,7 @@ body{
 }
 .swrap .sinput_list .input_item{
 	width: 48%;
-	font-size: .32em;
+	font-size: 16px;
 	position: relative;
 	margin-right: 4%;
 	margin-bottom: 40px;
@@ -287,7 +293,7 @@ body{
 	max-height: 200px;
 	min-height: 200px;
 	padding: 15px;
-	font-size: .32em;
+	font-size: 16px;
 	color: #fff;
 	border: 1px solid #212121;
 	outline: none;
@@ -295,7 +301,7 @@ body{
 	position: relative;
 }
 .floor_item .tips_que{
-	font-size: .32em;
+	font-size: 16px;
 	color: #949494;
 	margin-top: 30px;
 }
@@ -307,13 +313,13 @@ body{
 	flex-wrap: wrap;
 }
 .input_cat_form .con_ques{
-	font-size: .5em;
+	font-size: 25px;
 	color: #fff;
 	margin-bottom: 50px;
 }
 
 .input_cat_form .tips{
-	font-size: .32em;
+	font-size: 16px;
 	color: #949494;
 	margin-top: 30px;
 }
@@ -344,7 +350,7 @@ body{
 	color: #fff;
 	border: none;
 	outline: none;
-	font-size: .38em;
+	font-size: 19px;
 	cursor: pointer;
 }
 
@@ -364,14 +370,14 @@ body{
 	z-index: 0;
 }
 .question_list{
-	width: 80%;
+	width: 100%;
 	z-index: 1;
 	position: relative;
 }
 .question_list a{
 	display: block;
 	padding: 40px 0;
-	font-size: .38em;
+	font-size: 19px;
 	color: #949494;
 	border-bottom: 1px solid #333;
 	position: relative;
@@ -379,12 +385,16 @@ body{
 .question_list a.active .detail{
 	display: block;
 }
-.question_list a .detail,
-.question_list a .detail p{
+.question_list a .detail{
 	display: none;
-	font-size: .30em;
 	color: #999 !important;
+	font-size: .30em !important;
 	padding-top: 30px;
+}
+.question_list a .detail p,
+.question_list a .detail span{
+	font-size: .30em !important;
+	color: #999 !important;
 }
 .question_list .ques_a:hover{
 	color: #fff;
@@ -393,7 +403,7 @@ a.tohelp{
 	display: inline-block;
 	margin-top: 40px;
 	padding: 15px 20px;
-	font-size: .32em;
+	font-size: 16px;
 	background: #1C1B1B;
 	color: #fff;
 	border-bottom: none;
@@ -406,6 +416,30 @@ a.tohelp:hover{
 
 
 @media (min-width: 2300px){
+	.swrap .item_info,
+	.swrap .item_info p,
+	.swrap .item_info span{
+		font-size: 24px !important;
+		color: #949494 !important;
+	}
+	.floor_item .tips_que{
+		font-size: 24px;
+	}
+	.swrap .setp_item .setp_name{
+		font-size: 28px;
+	}
+	.input_cat_form .con_ques{
+		font-size: 38px;
+	}
+	.input_cat_form .tips{
+		font-size: 24px;
+	}
+	.swrap .setp_item .setp_desc{
+		font-size: 24px;
+	}
+	.swrap .item_name{
+		font-size: 38px;
+	}
 	.swrap .floor_item{
 		margin-bottom: 85px;
 	}
@@ -439,6 +473,15 @@ a.tohelp:hover{
   	height: 50px;
   	line-height: 50px;
   }
+  .swrap .floor_item .desc_wrap .desc_cont {
+    font-size: 24px !important;
+	}
+	.swrap .title{
+		font-size: 48px;
+	}
+	.question_list a{
+		font-size: 24px;
+	}
 }
 
 
