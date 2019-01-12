@@ -610,8 +610,8 @@ body{
 }
 .alert_box .alert_cont::-webkit-scrollbar 
 { 
-    width: 10px; 
-    height: 10px; 
+    width: 0; 
+    height: 0; 
     background-color: none; 
 } 
 .alert_box .alert_cont::-webkit-scrollbar-track 
@@ -1225,7 +1225,7 @@ body{
 		flex-wrap: wrap;
 	}
 	.detail_hi1 .hi_item{
-		min-width: 50%;
+		width: 50%;
 		padding: 0;
 		margin-bottom: 1.5rem;
 	}
@@ -1405,6 +1405,17 @@ body{
 	}
 	.detail_cont3 .detail_hi ul li{
 		padding: 0 .2rem;
+	}
+	.detail_cont4 .detail_cont4_ztxt .wrap_l img{
+		height: 12.16rem;
+	}
+	.detail_cont4 .detail_cont4_ztxt .wrap_rc img{
+		height: 5.9rem;
+		display: block;
+		margin-bottom: .36rem;
+	}
+	.detail_banner .cont_ztxt .title1 img{
+		width: 2.5rem;
 	}
 }
 
