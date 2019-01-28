@@ -58,7 +58,6 @@ html,body,input{
 }
 .acztxt_list .ztxt{
 	cursor: pointer;
-  	transition: all 3s !important;
 }
 .cont_news .news_ztxt .title{
 	cursor: pointer;
@@ -84,8 +83,9 @@ html,body,input{
 	display: none;
 }
 .c_head .logo{
-	height: 28px;
-    cursor: pointer;
+	height: 45px;
+	margin-top: 10px;
+  cursor: pointer;
 }
 .c_head .cnav{
 	position: absolute;
@@ -99,7 +99,6 @@ html,body,input{
 	color: #fff;
 	line-height: 2.35;
 }
-
 
 
 .c_head .cnav .nav_item img{
@@ -119,8 +118,8 @@ html,body,input{
 	top: 50%;
 	transform: translateY(-50%);
 	left: 0;
-	color: #fff;
   	padding-left: 25%;
+	color: #fff;
 	text-align: center;
 }
 .ztxt_ban .zb_cont.inr{
@@ -139,12 +138,13 @@ html,body,input{
 	text-align: center;
 }
 .ztxt_ban .zb_cont .title p{
-  text-align: left;
-  font-size: .32em;
+ 	line-height: 1.6;
+  	font-size: .32em;
+  	text-align: left;
 }
 .ztxt_ban .zb_cont .title p:nth-of-type(1){
-	margin-bottom: 20px; 
-   font-size: .8em;
+ 	margin-bottom: 30px; 
+  	font-size: .8em;
 }
 .ztxt_ban .zb_cont .title1{
 	font-size: .9em;
@@ -159,12 +159,15 @@ html,body,input{
 	text-align: center;
 	font-size: .6em;
 }
+.ztxt_ban .zb_cont .ban_t1 .ban_t1_logo{
+	width: 14%;
+} 
 .ztxt_ban .zb_cont .ban_t2{
 	width: 100%;
 	text-align: center;
 	font-size: 1em;
-	letter-spacing: 10px;
-	margin-top: 15px;
+	/*letter-spacing: 10px;*/
+	margin-top: 10px;
 	font-weight: bold;
 }
 .ztxt_ban .zb_cont .ban_desc{
@@ -182,8 +185,9 @@ html,body,input{
 	font-size: .38em;
 	color: #fff;
 	padding: 5px 50px 5px 15px;
-	border: 1px solid #fff;
+	border: none;
 	position: relative;
+ 	background: red;
 }
 .ztxt_ban .zb_cont .ban_go .img{
 	display: block;
@@ -192,12 +196,10 @@ html,body,input{
 	position: absolute;
 	right: 0;
 	top: 15%;
-	border-left: 1px solid #fff;
+	border-left: 1px solid rgba(255,255,255,.5);
 	text-align: center;
-  	
-  	/*add by 12/12*/
-  	background: url(/themes/web/assets/images/tr.png) center center no-repeat;
-  	background-size: 40%;
+    background: url(/themes/web/assets/images/tr.png) center center no-repeat;
+    background-size: 40%;
 }
 .ztxt_ban .zb_cont .ban_go .imged{
 	display: none;
@@ -245,7 +247,7 @@ html,body,input{
 .c_footer .footer_nav .footer_nav_item{
 	/*text-align: center;*/
 	min-width: 100px;
-	margin-right: 7%;
+	margin-right: 6%;
 }
 .c_footer .footer_nav .footer_nav_item:last-child{
 	margin-right: 0;
@@ -448,6 +450,7 @@ html,body,input{
 	top: 150px;
 	z-index: 9999;
 	width: 10%;
+	height: 400px;
 }
 .pages .setps.fixed{
 	position: fixed;
@@ -550,10 +553,12 @@ html,body,input{
 }
 .pages .setps .setp_ztxt .setp_btn span{
 	position: absolute;
+  	line-height: 1;
 	/*font-size: .32em;*/
 	font-size: 16px;
-	top: 50%;
-	transform: translateY(-50%);
+  	top: 0;
+	/*top: 50%;
+	transform: translateY(-50%);*/
 }
 .pages .setps .setp_ztxt .setp_btn:hover{
 	color: #fff;
@@ -607,28 +612,30 @@ html,body,input{
  .ztxt_ban .zb_cont .ban_t2{
    margin-top: 25px;
  }
- .ztxt_ban .zb_cont .ban_go .img{
+  .ztxt_ban .zb_cont .ban_go .img{
    background: url(/themes/web/assets/images/tr.png) center center no-repeat;
    background-size: 55%;
-  }
-  .pages .setps{
-   	height: 800px; 
   }
   .pages .setp_icon{
     width: 25px;
   }
   .pages .setp_icon .prev,
-   .pages .setp_icon .next{
+  .pages .setp_icon .next{
    	width: 25px;
     height: 25px;
   }
-  .c_head .cnav .nav_item img{
+  .c_head .cnav .nav_item img {
     width: 30px;
     height: 30px;
   }
+  .c_head .logo{
+  	height: 45px;
+  }
 }
 
-@media (max-width: 1199px) and (min-width: 768px){
+
+
+@media (max-width: 1500px) and (min-width: 768px){
 	.c_head{
 		padding-top: 20px;
 	}
@@ -636,7 +643,7 @@ html,body,input{
 		top: 20px;
 	}
 	.c_head .logo{
-		height: 20px;
+		height: 28px;
 	}
 }
 
@@ -686,9 +693,9 @@ html,body,input{
 		right: 0;
 		top: 0;
 		width: 1.88rem;
-      height: 1.88rem;
-      position: fixed;
-      z-index: 1000;
+    height: 1.88rem;
+    position: fixed;
+    z-index: 1000;
 	}
 	.mobile_tbn .menu_btn{
 		width: 1.88rem;
@@ -861,16 +868,13 @@ html,body,input{
 	.swiper_box:after{
 		display: none;
 	}
-  	.ztxt_ban .zb_cont.inr{
-    	right: 5%;  
-  	}
 	.ztxt_ban .zb_cont .ban_t1{
 		font-size: .64rem;
 	}
 	.ztxt_ban .zb_cont .ban_t2{
 		font-size: .768rem;
 		margin-top: .213rem;
-		letter-spacing: .13rem;
+		letter-spacing: 0;
 	}
 	.ztxt_ban .zb_cont .ban_desc{
 		margin-top: .427rem;
@@ -889,19 +893,29 @@ html,body,input{
   	.ztxt_ban .zb_cont{
       padding-left: .64rem;
   	}
-  	.ztxt_ban .zb_cont .title{
-    	font-size: .64rem;  
+  	.ztxt_ban .zb_cont.inr{
+  		width: 100%;
+	    right: 0;
+	    transform: none;
+	    top: 15%;
+	    padding-left: 0;
+  	}
+  	.ztxt_ban .zb_cont .title p{
+    	padding-right: 0;
+      	font-size: .55rem;
   	}
   .ztxt_ban .zb_cont .title p{
-    padding-left: 0;
-  }
-  	.ztxt_ban .zb_cont .title p:nth-of-type(3),
-  .ztxt_ban .zb_cont .title p:nth-of-type(4),
-  .ztxt_ban .zb_cont .title p:nth-of-type(5){
-  	display: none;
+   	font-size: .5rem;
   }
   .ztxt_ban .zb_cont .title p:nth-of-type(1){
-    margin-bottom: .2rem;
+   	margin-bottom: .1rem; 
   }
-      
+  .ztxt_ban .zb_cont .title p{
+    padding-left: 0;
+    display: none;
+  }
+  	.ztxt_ban .zb_cont .title p:nth-of-type(1),
+  .ztxt_ban .zb_cont .title p:nth-of-type(2){
+  	display: block;
+  }
 }
